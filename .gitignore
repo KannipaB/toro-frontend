@@ -3,3 +3,10 @@ dist
 .tmp
 bower_components
 test/bower_components
+gulpfile.js
+.idea/workspace.xml
+*.xml
+.idea/vcs.xml
+*.xml
+.idea/toro-frontend.iml
+gulpfile.js

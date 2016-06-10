@@ -9,7 +9,7 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
-  return gulp.src('app/desktop/styles/*.scss')
+  return gulp.src('app/mobile/styles/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({
@@ -19,17 +19,17 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('.tmp/desktop/styles'))
+    .pipe(gulp.dest('.tmp/mobile/styles'))
     .pipe(reload({stream: true}));
 });
 
 gulp.task('scripts', () => {
-  return gulp.src('app/desktop/scripts/**/*.js')
+  return gulp.src('app/mobile/scripts/**/*.js')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.babel())
     .pipe($.sourcemaps.write('.'))
-    .pipe(gulp.dest('.tmp/desktop/scripts'))
+    .pipe(gulp.dest('.tmp/mobile/scripts'))
     .pipe(reload({stream: true}));
 });
 
@@ -67,7 +67,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
 });
 
 gulp.task('images', () => {
-  return gulp.src('app/desktop/images/**/*')
+  return gulp.src('app/mobile/images/**/*')
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true,
@@ -114,8 +114,8 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch('app/desktop/styles/**/*.scss', ['styles']);
-  gulp.watch('app/desktop/scripts/**/*.js', ['scripts']);
+  gulp.watch('app/mobile/styles/**/*.scss', ['styles']);
+  gulp.watch('app/mobile/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
