@@ -1,0 +1,46 @@
+.breadcrumb-bar {
+    background: #ECEEEF;
+    &__main {
+        margin: 0;
+        > li + li:before {
+            color: #ccc;
+            font-family: FontAwesome;
+            content: "\f178";
+            padding: 0 5px;
+            border-radius: 0;
+        }
+    }
+}
+
+.ad-box {
+    margin: 40px 0;
+    text-align: center;
+    padding: 25px;
+    border: #000000 1px solid;
+}
+
+.social-bar {
+    border-bottom: #FFC025 8px solid;
+    &__button {
+        text-decoration: none;
+        display: inline-block;
+        color: $menu-link-color;
+        width: 110px;
+        text-align: center;
+        font-size: 1.8em;
+        padding: 5px;
+        &:hover, &:active, &:focus {
+            color: $menu-link-color;
+            text-decoration: none;
+        }
+        &.facebook {
+            background: #3B5998;
+        }
+        &.twitter {
+            background: #55acee;
+        }
+        &.google-plus {
+            background: #dd4b39;
+        }
+    }
+}

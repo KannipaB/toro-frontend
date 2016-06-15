@@ -1,0 +1,30 @@
+.latest {
+    &__header {
+        border-bottom: #FFC025 8px solid;
+        margin-bottom: 15px;
+    }
+    &__content {
+        display: block;
+        &--image {
+            img {
+                width: 100%;
+            }
+        }
+        &--date {
+            color: rgba(0, 0, 0, .4);
+            font-size: 0.8em;
+            font-weight: 400;
+            padding-top: 5px;
+        }
+        &--headline {
+            font-size: 1em !important;
+        }
+        &--details {
+            font-size: 0.9em !important;
+        }
+    }
+    &__bottom {
+        border-bottom: #F1F1F1 1px solid;
+        margin: 15px 0;
+    }
+}
