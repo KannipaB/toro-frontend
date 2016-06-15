@@ -1,0 +1,28 @@
+.latest-news {
+    &--header {
+        margin-bottom: 15px;
+        border-bottom: #FFC025 8px solid;
+    }
+    &--content {
+        display: table;
+        &__image {
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        &__date {
+            color: $default-date-color;
+        }
+        &__headline {
+            font-size: 1.2em;
+        }
+        &__details {
+            color: rgba(0, 0, 0, .68);
+        }
+    }
+    &__separator {
+        margin: 15px 0;
+        border-bottom: #f1f1f1 1px solid;
+    }
+}
