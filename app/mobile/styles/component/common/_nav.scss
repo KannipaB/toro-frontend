@@ -5,6 +5,7 @@ $collapse: $balltoro-gray;
 $balltoro-red: #FA1E64;
 $nav-list: $balltoro-red;
 $nav-background: #222;
+
 .nav-bar {
     background: #222;
     &__dropdown {
@@ -36,30 +37,28 @@ $nav-background: #222;
         &:hover, &:focus {
             color: $nav-list;
         }
-        &--collapse {
+        &--icon{
             color: white;
-            background-color: $collapse;
-            display: block;
-            border-bottom: 1px solid black;
-            padding: 0.7em;
-            &:hover, &:focus {
-                color: white;
-                text-decoration: none;
-                background-color: black;
-            }
+            padding-right: 25px;
+            padding-top: 15px;
+            float: right;
         }
     }
-}
-
-.chevron-icon {
-    color: white;
-    padding-right: 25px;
-    padding-top: 15px;
-    float: right;
-}
-
-.angle-right--icon {
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    &__collapse {
+        color: white;
+        background-color: $collapse;
+        display: block;
+        border-bottom: 1px solid black;
+        padding: 0.7em;
+        &:hover, &:focus {
+            color: white;
+            text-decoration: none;
+            background-color: black;
+        }
+        &--icon {
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
 }
