@@ -2,15 +2,39 @@ $base-widget-bg:#EFEFEF;
 
 .result-board{
     background: $base-widget-bg;
-    text-align: center;
+    font-size:1em;
+    a:hover {
+        text-decoration: none;
+    }
+    .result-board__league-dropdown--icon{
+        background:#FFC025;
+        color:white;
+        font-size: 1.2em;
+        padding :7px;
+        padding-bottom: 10px;
 
+    }
     &__button{
         color: red;
-        padding: 0;
-        width :100%;
-        p{
-            margin:0;
+        text-align:center;
+        width: 100%;
+        padding: 2px 0 2px 0;
+        margin : 0;
+        font-size: 1.1em;
+    }
+    &__league-dropdown{
+        background: #216CB6;
+        padding: 6px;
+        a{
+            color :white;
+            text-align: left;
         }
     }
+    .result-board__league-result{
+        text-align:center;
+        margin-top: 16px;
+    }
+
+
 }
 
