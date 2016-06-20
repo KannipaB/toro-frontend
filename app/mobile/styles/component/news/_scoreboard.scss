@@ -1,40 +1,77 @@
 $base-widget-bg:#EFEFEF;
+$dropdown-icon: #FFC025;
+$border-bottom:$dropdown-icon;
+$base-league-bg: #216CB6;
+$base-league-font:white;
+$board-league-font:#FA1E64;
 
 .result-board{
+    margin-top: 10px;
     background: $base-widget-bg;
     font-size:1em;
     a:hover {
         text-decoration: none;
     }
-    .result-board__league-dropdown--icon{
-        background:#FFC025;
+
+    &__button{
+        color: $board-league-font;
+        text-align:center;
+        width: 100%;
+        padding: 2px 10px;
+        margin : 0;
+        font-size: 1.1em;
+        a{
+            padding-right: 10px;
+        }
+        &.collapsed:after{
+            content : "+";
+            float :right;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &:after{
+            content : " − ";
+            float :right;
+            font-size: 20px;
+            line-height: 20px;
+            //padding : 10px;
+        }
+
+
+    }
+
+    &__league-dropdown--icon{
+        background:$dropdown-icon;
         color:white;
         font-size: 1.2em;
         padding :7px;
         padding-bottom: 10px;
 
     }
-    &__button{
-        color: red;
-        text-align:center;
-        width: 100%;
-        padding: 2px 0 2px 0;
-        margin : 0;
-        font-size: 1.1em;
-    }
+
     &__league-dropdown{
-        background: #216CB6;
+        background: $base-league-bg;
         padding: 6px;
         a{
-            color :white;
+            color :$base-league-font;
             text-align: left;
+        }
+        &--list{
+            width: 100% ;
+            border-radius: 0;
+            border: none;
         }
     }
     .result-board__league-result{
         text-align:center;
         margin-top: 16px;
+
     }
 
+}
 
+.table-head{
+    border-bottom: 10px;
+    border-color: $dropdown-icon;
 }
 

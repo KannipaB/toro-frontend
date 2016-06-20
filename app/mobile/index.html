@@ -169,58 +169,45 @@
 
 
             <div class="row result-board">
-
-
-                <div class="row result-board__button"  data-toggle="collapse" href="#collapse-dropdown" aria-expanded="false" aria-controls="collapse-dropdown">
-                    <a>ผลบอล</a><a class="pull-xs-right">+</a>
+                <div class="row result-board__button collapsed"  data-toggle="collapse" href="#collapse-dropdown" aria-expanded="false" aria-controls="collapse-dropdown">
+                    <a>ผลบอล</a>
                 </div>
-
-
-                <div class="collapse" id="collapse-dropdown" >
-
-
-                    <div class="dropdown">
-
-                        <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>
-                        <div class="result-board__league-dropdown dropdown-toggle" type="button" data-toggle="dropdown">
+                <div class="collapse " id="collapse-dropdown" >
+                    <div class="dropdown" type="button" id="menu-toggler1" data-toggle="dropdown">
+                        <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon " ></i>
+                        <div class="result-board__league-dropdown " >
                             <a class="">English Premier League</a>
                         </div>
-
-
-
-
-                        <div class="dropdown-menu"><p>hi there</p></div>
-
-
                     </div>
-
-
-                    <div class="result-board__league-result"><p>No Match Result</p></div>
-
-
+                    <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler" >
+                        <p >league result</p>
+                    </div>
+                    <div class="result-board__league-result"><p>No Match Result.</p></div>
                 </div>
-
             </div>
 
-<!--
+
             <div class="row result-board">
-
-
-                <div class="row btn result-board__button"  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <a>ผลบอล</a><a class="pull-xs-right">+</a>
+                <div class="row result-board__button collapsed"  data-toggle="collapse" href="#collapse-dropdown1" aria-expanded="false" aria-controls="collapse-dropdown1">
+                    <a>ตารางแข่งบอลวันนี้</a>
                 </div>
-                <div class="collapse " id="collapseExample">
-                    <div class="pull-xs-left">
-                        <a>English Premier League</a>
+                <div class="collapse " id="collapse-dropdown1" >
+                    <div class="dropdown" type="button" id="menu-toggler1" data-toggle="dropdown">
+                        <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon " ></i>
+                        <div class="result-board__league-dropdown " >
+                            <a class="">English Premier League</a>
+                        </div>
                     </div>
-                    <i class="fa fa-chevron-down pull-xs-right btn-sm" aria-hidden="true"></i>
-
-                    <div><p>No Match Result</p></div>
+                    <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler1" >
+                        <p >league result</p>
+                    </div>
+                    <div class="result-board__league-result"><p>No Match Result.</p></div>
                 </div>
+            </div>
 
-            </div>-->
-
-
+            <div class="row result-board table-head">
+                <a>ตารางคะแนน</a><a>อัพเดท 20 มิ.ย. 2559 15:10</a>
+            </div>
 
 
 
