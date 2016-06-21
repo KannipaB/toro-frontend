@@ -169,17 +169,19 @@
 
 
             <div class="row result-board">
-                <div class="row result-board__button collapsed"  data-toggle="collapse" href="#collapse-dropdown" aria-expanded="false" aria-controls="collapse-dropdown">
+                <div class="row result-board__button collapsed" data-toggle="collapse" href="#collapse-dropdown" aria-expanded="false" aria-controls="collapse-dropdown">
                     <a>ผลบอล</a>
                 </div>
-                <div class="collapse " id="collapse-dropdown" >
+                <div class="collapse" id="collapse-dropdown">
                     <div class="dropdown" >
-                        <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon " type="button" id="menu-toggler" data-toggle="dropdown"></i>
-                        <div class="result-board__league-dropdown " type="button" id="menu-toggler" data-toggle="dropdown">
-                            <a class="">English Premier League</a>
-                        </div>
-                        <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler" >
-                            <p >league result</p>
+                        <span  type="button" id="menu-toggler" data-toggle="dropdown">
+                            <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>
+                            <div class="result-board__league-dropdown">
+                                <a>English Premier League</a>
+                            </div>
+                        </span>
+                        <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler">
+                            <p>league result</p>
                         </div>
                     </div>
                     <div class="result-board__league-result">
@@ -187,20 +189,21 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="row result-board">
-                <div class="row result-board__button collapsed"  data-toggle="collapse" href="#collapse-dropdown1" aria-expanded="false" aria-controls="collapse-dropdown">
+                <div class="row result-board__button collapsed" data-toggle="collapse" href="#collapse-dropdown1" aria-expanded="false" aria-controls="collapse-dropdown">
                     <a>ตารางแข่งวันนี้</a>
                 </div>
-                <div class="collapse " id="collapse-dropdown1" >
-                    <div class="dropdown" >
-                        <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon " type="button" id="menu-toggler" data-toggle="dropdown"></i>
-                        <div class="result-board__league-dropdown " type="button" id="menu-toggler1" data-toggle="dropdown">
-                            <a class="">English Premier League</a>
-                        </div>
-                        <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler" >
-                            <p >league result</p>
+                <div class="collapse" id="collapse-dropdown1">
+                    <div class="dropdown">
+                        <span  type="button" id="menu-toggler1" data-toggle="dropdown">
+                            <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>
+                            <div class="result-board__league-dropdown ">
+                                <a>English Premier League</a>
+                            </div>
+                        </span>
+                        <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler1">
+                            <p>league result</p>
                         </div>
                     </div>
                     <div class="result-board__league-result">
@@ -209,34 +212,49 @@
                 </div>
             </div>
 
-
-            <div class="row result-board ">
-                <div class="table-head">
-                <a>ตารางคะแนน</a><a>อัพเดท 20 มิ.ย. 2559 15:10</a>
+            <div class="row result-board">
+                <div class="table-description">
+                    <a>ตารางคะแนน</a><a class="date-time">อัพเดท 20 มิ.ย. 2559 15:10</a>
                 </div>
                 <div class="dropdown" >
-                    <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon " type="button" id="menu-toggler" data-toggle="dropdown"></i>
-                    <div class="result-board__league-dropdown " type="button" id="menu-toggler1" data-toggle="dropdown">
-                        <a class="">Premier League</a>
-                    </div>
-                    <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler" >
-                        <p >league result</p>
+                    <span  type="button" id="menu-toggler2" data-toggle="dropdown">
+                        <i class="fa fa-chevron-down pull-xs-right result-board__league-dropdown--icon"></i>
+                        <div class="result-board__league-dropdown">
+                            <a class="">Premier League</a>
+                        </div>
+                    </span>
+                    <div class="dropdown-menu result-board__league-dropdown--list" role="menu" aria-labelledby="menu-toggler2" >
+                        <p>league result</p>
                     </div>
                 </div>
-                <div class="result-board__league-result">
-                    <p>No Match Result.</p>
+                <div class="result-board__league-result league-table">
+
+                    <table class ="table table-sm ">
+                        <thead class="league-table--header">
+                        <th>Pos</th>
+                        <th>Teams</th>
+                        <th>P</th>
+                        <th>+/-</th>
+                        <th>Pts</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="league-table__team-names">
+                                <a href="#">เลสเตอร์ ซิตี้</a>
+                            </td>
+                            <td>38</td>
+                            <td>32</td>
+                            <td>81</td>
+                        </tr>
+                        </tbody>
+
+
+                    </table>
+
+
+
                 </div>
-
-
-
-
-
-
-
-
-
-
-
 
             </div>
 
