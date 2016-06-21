@@ -72,8 +72,7 @@ $board-league-font:#FA1E64;
 }
 
 .table-description{
-    border-bottom: solid $dropdown-icon;
-    border-width: 8px;
+    border-bottom: 8px solid $dropdown-icon;
     text-align: center;
 }
 
@@ -83,21 +82,22 @@ $board-league-font:#FA1E64;
 
 .league-table
 {
-    margin-top: 0px!important;
+    margin-top: 0!important;
 
     &--header{
         font-size: 13px;
         padding:0!important;
-        border-bottom: solid rgb(221, 221, 221);
-        border-width: 3px;
+        border-bottom: 3px solid gray;
     }
+
     thead{
         padding: 0px;
     }
+
     tbody{
-        border-bottom: solid white;
-        border-width: 1px;
         tr {
+            font-size:14px;
+
             &:hover {
                 background-color: white;
             }
@@ -105,11 +105,25 @@ $board-league-font:#FA1E64;
     }
 
     &__team-names{
-        width :70%;
-        float: left;
+        width :85%;
+        text-align: left;
+
         a{
             color:black;
-
         }
     }
+}
+
+.rank-1{
+    background-color: rgb(255, 192, 37);
+}
+
+.rank-2{
+    background-color: #FFCD51;
+}
+.rank-3{
+    background-color: #6BD181;
+}
+.rank-4{
+    background-color: #9CE0AB;
 }
