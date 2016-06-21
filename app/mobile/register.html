@@ -10,24 +10,30 @@
     <div class="container">
         <div class="col-xs-12">
             <div class="row ad-box">ADVERTISE HERE</div>
-            <div class="row login m-y-2">
+            <div class="row register m-y-2">
                 <div class="m-b-2">
-                    <h3>Login</h3>
+                    <h3>Register</h3>
                 </div>
                 <form action="">
                     <fieldset class="form-group">
-                        <input type="text" class="form-control m-b-1" id="toro-username" placeholder="Username">
-                        <input type="password" class="form-control" id="toro-password" placeholder="Password">
-                        <p><a href="#" class="pull-xs-right">forgot password ?</a></p>
-                        <label>
-                            <input type="checkbox"> Remember me
-                        </label>
-                        <button type="submit" class="btn btn-primary login__login-btn"><strong>LOG IN</strong></button>
-                        <p><a href="#" class="pull-xs-right">Register</a></p>
+                        <label for="firstname"><strong>ชื่อ</strong></label>
+                        <input type="text" class="form-control m-b-1" id="firstname" placeholder="Enter Firstname">
+                        <label for="lastname"><strong>นามสกุล</strong></label>
+                        <input type="text" class="form-control m-b-1" id="lastname" placeholder="Enter Lastname">
+                        <label for="email"><strong>อีเมล</strong></label>
+                        <input type="email" class="form-control m-b-1" id="email" placeholder="Enter E-mail">
+                        <label for="password"><strong>รหัสผ่าน</strong></label>
+                        <input type="password" class="form-control m-b-1" id="password" placeholder="Enter Password">
+                        <label for="re-password"><strong>ยินยันรหัสผ่าน</strong></label>
+                        <input type="password" class="form-control m-b-1" id="re-password" placeholder="Re Password">
+                        <label for="re-password"><strong>Birthday</strong></label>
+                        <input type="date" class="form-control m-b-1" id="birthday" placeholder="Birthday">
+                        <button type="submit" class="btn btn-primary login__login-btn"><strong>Register</strong></button>
+                        <p><a href="#" class="pull-xs-left">Member login</a></p>
                     </fieldset>
                 </form>
                 <div>
-                    <p><strong>Or Login with</strong></p>
+                    <p><strong>Or Signup with</strong></p>
                     <a href="#"><i class="fa fa-3x fa-facebook-square login__facebook-btn" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-3x fa-google-plus-square login__google-plus-btn" aria-hidden="true"></i></a>
                 </div>
