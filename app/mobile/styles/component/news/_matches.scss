@@ -1,5 +1,6 @@
 $date-selector-color: #F0F0F0;
 $league-toggle-color: $date-selector-color;
+$match-result-bg: $date-selector-color;
 $league-toggle-bottom: #CECBCB;
 $score-table-bottom: #f2f2f2;
 $score-color: #0672BC;
@@ -39,7 +40,7 @@ $score-result-ft: #CCCCCC;
 
 .match-score {
     &__table {
-        display: table;
+        //display: block;
         padding: 8px;
         width: 100%;
         border-bottom: $score-table-bottom 1px solid;
@@ -60,7 +61,7 @@ $score-result-ft: #CCCCCC;
         }
     }
     &__logo {
-        width: 8%;
+        width: 7%;
         text-align: center;
     }
     &__home {
@@ -87,5 +88,28 @@ $score-result-ft: #CCCCCC;
     &__away {
         text-align: left;
         width: 30%;
+    }
+}
+
+.stat {
+    font-weight: 800;
+    &__headline {
+        background: #f1f1f1;
+        padding: 8px;
+        margin: 2em 0;
+        text-align: center;
+    }
+    &__team {
+        margin: 1em 0;
+        font-size: 0.8em;
+        &--name {
+            text-align: right;
+        }
+        &--player {
+            border-bottom: #000000 1px solid;
+        }
+        &--sub-player {
+            border-bottom: #000000 1px solid;
+        }
     }
 }
