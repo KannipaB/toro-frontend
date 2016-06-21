@@ -71,7 +71,9 @@ $board-league-font:#FA1E64;
 }
 
 .table-head{
-    border-bottom: 10px;
-    border-color: $dropdown-icon;
+    border-bottom: solid $dropdown-icon;
+    border-width: 8px;
+    text-align: center;
 }
 
+.premier-league
