@@ -4,7 +4,10 @@ $match-result-bg: $date-selector-color;
 $league-toggle-bottom: #CECBCB;
 $score-table-bottom: #f2f2f2;
 $score-color: #0672BC;
-$score-result-ft: #CCCCCC;
+$score-result-ft-text: #FFFFFF;
+$score-result-ft-bg: #CCCCCC;
+$default-border-bottom-color: #CCCCCC;
+$stat-headline-bg: #f1f1f1;
 
 .date-selector {
     background: $date-selector-color;
@@ -79,10 +82,10 @@ $score-result-ft: #CCCCCC;
         margin: 0 auto;
         width: 10%;
         &--ft {
-            background-color: $score-result-ft;
+            background-color: $score-result-ft-bg;
             border-radius: 20px;
             width: 80%;
-            color: #FFFFFF;
+            color: $score-result-ft-text;
         }
     }
     &__away {
@@ -94,7 +97,7 @@ $score-result-ft: #CCCCCC;
 .stat {
     font-weight: 800;
     &__headline {
-        background: #f1f1f1;
+        background: $stat-headline-bg;
         padding: 8px;
         margin: 2em 0;
         text-align: center;
@@ -106,10 +109,21 @@ $score-result-ft: #CCCCCC;
             text-align: right;
         }
         &--player {
-            border-bottom: #000000 1px solid;
+            border-bottom: $default-border-bottom-color 1px solid;
         }
         &--sub-player {
-            border-bottom: #000000 1px solid;
+            border-bottom: $default-border-bottom-color 1px solid;
         }
+    }
+}
+
+.result {
+    &__header {
+        margin-top: 2em;
+        border-bottom: $default-border-bottom-color 1px solid;
+    }
+    &__show {
+        margin: 1em 0;
+        text-align: center;
     }
 }
