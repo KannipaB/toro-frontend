@@ -9,7 +9,6 @@ $nav-background: #222;
 .nav-bar {
     background: #222;
     &__dropdown {
-        padding-top: 50px;
         &--position {
             display: inline;
             padding-left: 0;
@@ -24,7 +23,7 @@ $nav-background: #222;
         background-color: $toggler;
         padding: 3px 7px;
         margin-top: 7px;
-        margin-right:10px;
+        margin-right: 10px;
     }
 }
 
