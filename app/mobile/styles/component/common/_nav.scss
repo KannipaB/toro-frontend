@@ -1,0 +1,64 @@
+$balltoro-gray: #333;
+$toggler: $balltoro-gray;
+$separator-list: $balltoro-gray;
+$collapse: $balltoro-gray;
+$balltoro-red: #FA1E64;
+$nav-list: $balltoro-red;
+$nav-background: #222;
+
+.nav-bar {
+    background: #222;
+    &__dropdown {
+        padding-top: 50px;
+        &--position {
+            display: inline;
+            padding-left: 0;
+        }
+    }
+    &__logo {
+        height: 50px;
+    }
+    &__toggler {
+        font-size: 1.8em;
+        border-radius: 5px;
+        background-color: $toggler;
+        padding: 3px 7px;
+        margin-top: 5px;
+    }
+}
+
+.nav-list {
+    &__menu {
+        border-top: 1px solid $separator-list;
+        color: $nav-list;
+        display: block;
+        line-height: 45px;
+        padding-left: 15px;
+        &:hover, &:focus {
+            color: $nav-list;
+        }
+        &--icon{
+            color: white;
+            padding-right: 25px;
+            padding-top: 15px;
+            float: right;
+        }
+    }
+    &__collapse {
+        color: white;
+        background-color: $collapse;
+        display: block;
+        border-bottom: 1px solid black;
+        padding: 0.7em;
+        &:hover, &:focus {
+            color: white;
+            text-decoration: none;
+            background-color: black;
+        }
+        &--icon {
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

@@ -5,8 +5,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/main.css">
     </head>
-
     <body>
+
+    <div class="collapse" id="exCollapsingNavbar">
+        <div class="bg-inverse nav-bar__dropdown nav-bar">
+            <ul class="nav-bar__dropdown--position">
+                <li>
+                    <a href="#" class="nav-list__menu">ผลบอลวันนี้</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-list__menu">ตารางการแข่งขัน</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-list__menu" data-toggle="collapse" data-target="#drilldown-1">
+                        ข่าวฟุตบอล
+                        <i class="fa fa-chevron-down nav-list__menu--icon"></i>
+                    </a>
+                    <ul id="drilldown-1" class="nav nav-pills nav-stacked collapse">
+                        <li>
+                            <a href="#" class="nav-list__collapse">
+                                <i class="fa fa-angle-right nav-list__collapse--icon"></i>
+                                English Premier League
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-list__collapse">
+                                <i class="fa fa-angle-right nav-list__collapse--icon"></i>
+                                Thai Premier League
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-list__collapse">
+                                <i class="fa fa-angle-right nav-list__collapse--icon"></i>
+                                ข่าวทั้งหมด
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-list__menu" data-toggle="collapse" data-target="#drilldown-2">
+                        สกู๊ปฟุตบอล
+                        <i class="fa fa-chevron-down nav-list__menu--icon"></i>
+                    </a>
+                    <ul id="drilldown-2" class="nav nav-pills nav-stacked collapse">
+                        <li>
+                            <a href="#" class="nav-list__collapse">
+                                <i class="fa fa-angle-right nav-list__collapse--icon"></i>
+                                English Premier League
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-list__collapse">
+                                <i class="fa fa-angle-right nav-list__collapse--icon"></i>
+                                Thai Premier League
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-list__collapse">
+                                <i class="fa fa-angle-right nav-list__collapse--icon"></i>
+                                สกู๊ปทั้งหมด
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-list__menu" type="button"><i class="fa fa-sign-in fa-2x"></i> เข้าสู่ระบบ</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <nav class="navbar-fixed-top bg-inverse">
+        <div class="nav-bar">
+            <a href="#">
+                <img class="nav-bar__logo " src="https://balltoro.com/ui/web/images/main-logo.png">
+            </a>
+            <button class="navbar-toggler pull-xs-right nav-bar__toggler" type="button" data-toggle="collapse"
+                    data-target="#exCollapsingNavbar">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="col-xs-12">
             <div class="row ad-box text-xs-center">ADVERTISE HERE</div>
@@ -336,6 +416,7 @@
             <p>Copyright © 2015</p>
         </div>
     </footer>
+>>>>>>> refs/remotes/origin/master
     <!--script-->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/tether/dist/js/tether.min.js"></script>
