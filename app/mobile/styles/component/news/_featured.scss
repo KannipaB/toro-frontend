@@ -15,7 +15,6 @@ a {
 }
 
 .featured-content {
-    border-top: $featured-top-border-color 8px solid;
     background-color: $featured-bg-color;
     margin-bottom: 30px;
     &__image {
@@ -25,20 +24,20 @@ a {
         }
     }
     &__date {
-        padding: 5px;
         color: $featured-date-color;
+        font-size: 0.8em;
+        padding: 5px;
+        &:before{
+            font-family: FontAwesome;
+            content: " \f017 ";
+        }
     }
     &__headline {
         padding: 0 5px;
-        a {
-            font-size: 1.5em;
-        }
     }
-}
-
-.bottom-separator {
-    //margin-bottom: 30px;
-    border-bottom: $separator-color 1px solid;
+    &__separator{
+        border-bottom: $separator-color 1px solid;
+    }
 }
 
 .ad-box {

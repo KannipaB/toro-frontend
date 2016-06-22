@@ -1,0 +1,15 @@
+$facebook-btn: #3B5998;
+$google-plus-btn: #dd4b39;
+
+.login {
+    &__login-btn {
+        width: 100%;
+        border-radius: 0;
+    }
+    &__facebook-btn {
+        color: $facebook-btn;
+    }
+    &__google-plus-btn {
+        color: $google-plus-btn;
+    }
+}

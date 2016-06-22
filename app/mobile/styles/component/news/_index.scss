@@ -1,6 +1,17 @@
 $block-separator-color: #f1f1f1;
+$category-header-underline: #FFC025;
 
-.block-separator {
-    margin: 15px 0;
-    border-bottom: $block-separator-color 8px solid;
+.category {
+    &__header {
+        display: table;
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: $category-header-underline 8px solid;
+        p, h5 {
+            margin: 0;
+        }
+        a {
+            font-size: 2em;
+        }
+    }
 }

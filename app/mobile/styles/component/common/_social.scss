@@ -1,20 +1,19 @@
+// Social Button Color
 $facebook-btn-color: #3B5998;
 $twitter-btn-color: #55acee;
 $google-plus-btn-color: #dd4b39;
 $line-btn-color: #00DD00;
-$base-text-color: #FFFFFF;
+$social-icon-color: #FFFFFF;
 $border-bottom-color: #FFC025;
 
-.social-bar {
+.social {
     &__button {
-        display: inline;
-        color: $base-text-color;
+        color: $social-icon-color;
         text-decoration: none !important;
         text-align: center;
-        font-size: 2.3em;
         padding: 5px;
         &:hover, &:focus, &:active {
-            color: $base-text-color;
+            color: $social-icon-color;
         }
         &--facebook {
             background: $facebook-btn-color;
@@ -29,7 +28,7 @@ $border-bottom-color: #FFC025;
             background: $line-btn-color;
         }
     }
-    &__border-bottom{
+    &__border {
         border-bottom: $border-bottom-color 8px solid;
     }
 }
