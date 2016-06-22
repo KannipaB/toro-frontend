@@ -10,7 +10,4 @@ test/bower_components
 .idea/copyright/profiles_settings.xml
 .idea/workspace.xml
 .idea/*
-app/mobile/.idea/copyright/profiles_settings.xml
-app/mobile/.idea/workspace.xml
-app/mobile/.idea/modules.xml
 app/mobile/.idea/*
