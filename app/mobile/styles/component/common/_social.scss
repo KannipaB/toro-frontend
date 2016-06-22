@@ -1,0 +1,35 @@
+$facebook-btn-color: #3B5998;
+$twitter-btn-color: #55acee;
+$google-plus-btn-color: #dd4b39;
+$line-btn-color: #00DD00;
+$base-text-color: #FFFFFF;
+$border-bottom-color: #FFC025;
+
+.social-bar {
+    &__button {
+        display: inline;
+        color: $base-text-color;
+        text-decoration: none !important;
+        text-align: center;
+        font-size: 2.3em;
+        padding: 5px;
+        &:hover, &:focus, &:active {
+            color: $base-text-color;
+        }
+        &--facebook {
+            background: $facebook-btn-color;
+        }
+        &--twitter {
+            background: $twitter-btn-color;
+        }
+        &--google-plus {
+            background: $google-plus-btn-color;
+        }
+        &--line {
+            background: $line-btn-color;
+        }
+    }
+    &__border-bottom{
+        border-bottom: $border-bottom-color 8px solid;
+    }
+}

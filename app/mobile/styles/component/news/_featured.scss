@@ -1,0 +1,49 @@
+$default-button-color: #FFFFFF;
+$default-link-color: #FA1E64;
+$featured-date-color: rgba(0, 0, 0, .4);
+$featured-bg-color: #f1f1f1;
+$featured-top-border-color: #FFC025;
+$separator-color: $featured-bg-color;
+
+a {
+    color: $default-link-color;
+    text-decoration: none;
+    &:hover, &:focus, &:active {
+        color: $default-link-color;
+        text-decoration: underline;
+    }
+}
+
+.featured-content {
+    border-top: $featured-top-border-color 8px solid;
+    background-color: $featured-bg-color;
+    margin-bottom: 30px;
+    &__image {
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__date {
+        padding: 5px;
+        color: $featured-date-color;
+    }
+    &__headline {
+        padding: 0 5px;
+        a {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.bottom-separator {
+    //margin-bottom: 30px;
+    border-bottom: $separator-color 1px solid;
+}
+
+.ad-box {
+    border: #000000 1px solid;
+    padding: 25px;
+    margin: 30px;
+    text-align: center;
+}

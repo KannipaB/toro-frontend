@@ -1,0 +1,115 @@
+$date-selector-color: #F0F0F0;
+$league-toggle-color: $date-selector-color;
+$match-result-bg: $date-selector-color;
+$league-toggle-bottom: #CECBCB;
+$score-table-bottom: #f2f2f2;
+$score-color: #0672BC;
+$score-result-ft: #CCCCCC;
+
+.date-selector {
+    background: $date-selector-color;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    &__list {
+        width: 100% !important;
+        margin-top: 1em;
+    }
+}
+
+.league-toggle {
+    background: $league-toggle-color;
+    border-bottom: $league-toggle-bottom 1px solid;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 0.8em;
+    font-weight: 600;
+    &.collapsed:after {
+        content: " + ";
+        float: right;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    &:after {
+        content: " − ";
+        float: right;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.match-score {
+    &__table {
+        //display: block;
+        padding: 8px;
+        width: 100%;
+        border-bottom: $score-table-bottom 1px solid;
+        font-weight: 700;
+        vertical-align: middle;
+        a {
+            display: block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        span {
+            display: inline-table;
+            vertical-align: middle;
+        }
+        &:hover {
+            background-color: $score-table-bottom;
+        }
+    }
+    &__logo {
+        width: 7%;
+        text-align: center;
+    }
+    &__home {
+        text-align: right;
+        width: 30%;
+    }
+    &__score {
+        text-align: center;
+        width: 5%;
+        font-size: 1.2em;
+        color: $score-color;
+    }
+    &__result {
+        text-align: center;
+        margin: 0 auto;
+        width: 10%;
+        &--ft {
+            background-color: $score-result-ft;
+            border-radius: 20px;
+            width: 80%;
+            color: #FFFFFF;
+        }
+    }
+    &__away {
+        text-align: left;
+        width: 30%;
+    }
+}
+
+.stat {
+    font-weight: 800;
+    &__headline {
+        background: #f1f1f1;
+        padding: 8px;
+        margin: 2em 0;
+        text-align: center;
+    }
+    &__team {
+        margin: 1em 0;
+        font-size: 0.8em;
+        &--name {
+            text-align: right;
+        }
+        &--player {
+            border-bottom: #000000 1px solid;
+        }
+        &--sub-player {
+            border-bottom: #000000 1px solid;
+        }
+    }
+}

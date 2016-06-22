@@ -1,0 +1,16 @@
+$breadcrumb-bg: #eceeef;
+$breadcrumb-separator-color: #CCCCCC;
+
+.breadcrumb-bar {
+    background: $breadcrumb-bg;
+    &--balltoro {
+        height: 30px;
+        li + li:before {
+            color: $breadcrumb-separator-color;
+            font-family: FontAwesome;
+            content: "\f178";
+            padding: 0 5px;
+            border-radius: 0;
+        }
+    }
+}

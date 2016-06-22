@@ -1,0 +1,31 @@
+$scoop-header-underline: #FFC025;
+$scoop-date-color: rgba(0, 0, 0, .4);
+
+.scoop {
+    &__header {
+        padding: 5px 0;
+        border-bottom: $scoop-header-underline 8px solid;
+        p, h5 {
+            margin: 0;
+        }
+        a {
+            font-size: 2em;
+        }
+    }
+    &__content {
+        &--image {
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        &--date {
+            margin: 5px 0;
+            font-size: .8em;
+            color: $scoop-date-color;
+        }
+        &--headline {
+            margin: 10px 0;
+        }
+    }
+}

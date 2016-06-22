@@ -1,0 +1,6 @@
+$block-separator-color: #f1f1f1;
+
+.block-separator {
+    margin: 15px 0;
+    border-bottom: $block-separator-color 8px solid;
+}
