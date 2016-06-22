@@ -22,7 +22,8 @@ $nav-background: #222;
         border-radius: 5px;
         background-color: $toggler;
         padding: 3px 7px;
-        margin-top: 5px;
+        margin-top: 7px;
+        margin-right: 10px;
     }
 }
 
@@ -35,12 +36,6 @@ $nav-background: #222;
         padding-left: 15px;
         &:hover, &:focus {
             color: $nav-list;
-        }
-        &--icon{
-            color: white;
-            padding-right: 25px;
-            padding-top: 15px;
-            float: right;
         }
     }
     &__collapse {
