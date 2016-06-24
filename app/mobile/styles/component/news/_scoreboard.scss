@@ -1,21 +1,21 @@
-$base-widget-bg:#EFEFEF;
+$base-widget-bg: #EFEFEF;
 $dropdown-icon: #FFC025;
-$border-bottom:$dropdown-icon;
+$border-bottom: $dropdown-icon;
 $base-leagueHeader-bg: #216CB6;
-$base-white:white;
-$base-league-font:$base-white;
-$base-ranking-bg:$base-white;
-$base-ranking-border:$base-white;
-$board-league-font:#FA1E64;
-$rank-1:rgb(255, 192, 37);
-$rank-2:#FFCD51;
-$rank-3:#6BD181;
-$rank-4:#9CE0AB;
+$base-white: white;
+$base-league-font: $base-white;
+$base-ranking-bg: $base-white;
+$base-ranking-border: $base-white;
+$board-league-font: #FA1E64;
+$rank-1: rgb(255, 192, 37);
+$rank-2: #FFCD51;
+$rank-3: #6BD181;
+$rank-4: #9CE0AB;
 
-.result-board{
+.result-board {
     margin-top: 7px;
     background: $base-widget-bg;
-    font-size:1em;
+    font-size: 1rem;
 
     a {
         &:hover {
@@ -23,119 +23,120 @@ $rank-4:#9CE0AB;
         }
     }
 
-    &__button{
+    &__button {
         color: $board-league-font;
-        text-align:center;
+        text-align: center;
         width: 100%;
         padding: 2px 10px;
-        margin : 0;
-        font-size: 1.1em;
-        a{
+        margin: 0;
+        font-size: 1.1rem;
+        a {
             padding-right: 10px;
         }
-        &.collapsed:after{
-            content : "+";
-            float :right;
-            font-size: 20px;
-            line-height: 20px;
+        &.collapsed {
+            &:after {
+                content: "+";
+                float: right;
+                font-size: 20px;
+                line-height: 20px;
+            }
         }
-        &:after{
-            content : " − ";
-            float :right;
+        &:after {
+            content: " − ";
+            float: right;
             font-size: 20px;
             line-height: 20px;
         }
     }
 
-    &__league-dropdown--icon{
-        background:$dropdown-icon;
-        color:white;
-        font-size: 1.2em;
-        padding :7px;
+    &__league-dropdown--icon {
+        background: $dropdown-icon;
+        color: white;
+        font-size: 1.2rem;
+        padding: 7px;
         padding-bottom: 10px;
     }
 
-    &__league-dropdown{
+    &__league-dropdown {
         background: $base-leagueHeader-bg;
         padding: 6px;
-        a{
-            color :$base-league-font;
+        a {
+            color: $base-league-font;
             text-align: left;
         }
 
-        &--list{
-            width: 100% ;
+        &--list {
+            width: 100%;
             border-radius: 0;
             border: none;
         }
     }
 
-    .result-board__league-result{
-        text-align:center;
+    .result-board__league-result {
+        text-align: center;
         margin-top: 16px;
     }
 }
 
-.table-description{
+.table-description {
     border-bottom: 8px solid $dropdown-icon;
     text-align: center;
 }
 
-.date-time{
+.date-time {
     font-size: 13px;
 }
 
-.league-table
-{
-    margin-top: 0!important;
-    font-size:14px;
+.league-table {
+    margin-top: 0 !important;
+    font-size: 14px;
 
-    &--box{
-        margin-bottom:0;
-        &__header{
+    &--box {
+        margin-bottom: 0;
+        &__header {
             font-size: 13px;
-            padding:0!important;
+            padding: 0 !important;
             border-bottom: 3px solid gray;
         }
     }
 
-    thead{
-        padding: 0px;
+    thead {
+        padding: 0;
     }
 
-   tbody{
-       tr {
-           &:hover {
-               background-color: $base-ranking-bg;
-           }
-       }
-       td{
-           padding:8px;
-           border-bottom: 1px solid $base-ranking-border;
-       }
-   }
+    tbody {
+        tr {
+            &:hover {
+                background-color: $base-ranking-bg;
+            }
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid $base-ranking-border;
+        }
+    }
 
-    &__team-names{
-        width :50%;
+    &__team-names {
+        width: 50%;
         text-align: left;
-        a{
-            color:black;
+        a {
+            color: black;
         }
     }
 }
 
-.rank-1{
+.rank-1 {
     background-color: $rank-1;
 }
 
-.rank-2{
+.rank-2 {
     background-color: $rank-2;
 }
 
-.rank-3{
+.rank-3 {
     background-color: $rank-3;
 }
 
-.rank-4{
+.rank-4 {
     background-color: $rank-4;
 }

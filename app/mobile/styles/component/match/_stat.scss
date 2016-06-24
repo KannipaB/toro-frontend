@@ -6,12 +6,12 @@ $default-border-bottom-color: #CCCCCC;
     &__headline {
         background: $stat-headline-bg;
         padding: 8px;
-        margin: 2em 0;
+        margin: 2rem 0;
         text-align: center;
     }
     &__team {
-        margin: 1em 0;
-        font-size: 0.8em;
+        margin: 1rem 0;
+        font-size: 0.8rem;
         &--name {
             text-align: right;
         }

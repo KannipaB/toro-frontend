@@ -38,17 +38,19 @@ $image-top-color: #FFC025;
     }
     &__content {
         padding: 10px 0;
-        &--quote:before {
-            content: '//////////';
-            color: #00bfff;
-            font-size: 1.2em;
-            font-weight: 700;
+        &--quote {
+            &:before {
+                content: '//////////';
+                color: #00bfff;
+                font-size: 1.2em;
+                font-weight: 700;
+            }
         }
     }
 }
 
 .relate-news {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     list-style: none;
     padding: 0;
     li {
