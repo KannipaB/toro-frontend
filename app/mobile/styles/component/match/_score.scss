@@ -1,0 +1,56 @@
+$score-table-bottom: #f2f2f2;
+$score-color: #0672BC;
+$score-result-ft-text: #FFFFFF;
+$score-result-ft-bg: #CCCCCC;
+
+.match-score {
+    &__table {
+        padding: 8px;
+        width: 100%;
+        border-bottom: $score-table-bottom 1px solid;
+        font-weight: 700;
+        vertical-align: middle;
+        a {
+            display: block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        span {
+            display: inline-table;
+            vertical-align: middle;
+        }
+        &:hover {
+            background-color: $score-table-bottom;
+        }
+    }
+    &__logo {
+        width: 7%;
+        text-align: center;
+    }
+    &__home {
+        text-align: right;
+        width: 30%;
+    }
+    &__score {
+        text-align: center;
+        width: 5%;
+        font-size: 1.2em;
+        color: $score-color;
+    }
+    &__result {
+        text-align: center;
+        margin: 0 auto;
+        width: 10%;
+        &--ft {
+            background-color: $score-result-ft-bg;
+            border-radius: 20px;
+            width: 80%;
+            color: $score-result-ft-text;
+        }
+    }
+    &__away {
+        text-align: left;
+        width: 30%;
+    }
+}
