@@ -14,8 +14,8 @@ $scoop-date-color: rgba(0, 0, 0, .4);
         }
     }
     &__content {
-        display: table;
-        padding: 1rem 0;
+        display: block;
+        margin: 1rem 0;
         border-bottom: $latest-separator-color 1px solid;
         &--image {
             img {
@@ -23,7 +23,7 @@ $scoop-date-color: rgba(0, 0, 0, .4);
             }
         }
         &--date {
-            font-size: .8rem;
+            font-size: .9rem;
             padding: 3px 0;
             color: $scoop-date-color;
             &:before {

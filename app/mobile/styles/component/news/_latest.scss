@@ -25,6 +25,7 @@ $latest-details-color: rgba(0, 0, 0, .68);
             }
         }
         &--date {
+            font-size: .9rem;
             color: $latest-date-color;
             &:before {
                 font-family: FontAwesome;
