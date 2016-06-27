@@ -15,14 +15,11 @@ $rank-4: #9CE0AB;
 .result-board {
     margin-top: 7px;
     background: $base-widget-bg;
-    font-size: 1rem;
-
     a {
         &:hover {
             text-decoration: none;
         }
     }
-
     &__button {
         color: $board-league-font;
         text-align: center;
@@ -30,48 +27,37 @@ $rank-4: #9CE0AB;
         padding: 2px 10px;
         margin: 0;
         font-size: 1.1rem;
-        a {
-            padding-right: 10px;
-        }
         &.collapsed {
             &:after {
                 content: "+";
                 float: right;
-                font-size: 20px;
                 line-height: 20px;
             }
         }
         &:after {
             content: " − ";
             float: right;
-            font-size: 20px;
+            font-size: 1.3rem;
             line-height: 20px;
         }
     }
-
-    &__league-dropdown--icon {
-        background: $dropdown-icon;
-        color: white;
-        font-size: 1.2rem;
-        padding: 7px;
-        padding-bottom: 10px;
-    }
-
     &__league-dropdown {
         background: $base-leagueHeader-bg;
         padding: 6px;
-        a {
-            color: $base-league-font;
-            text-align: left;
-        }
-
+        display: block;
+        color: $base-league-font;
+        font-size: 0.9rem;
         &--list {
             width: 100%;
-            border-radius: 0;
             border: none;
         }
     }
-
+    &__league-dropdown--icon {
+        background: $dropdown-icon;
+        color: white;
+        font-size: 1.1rem;
+        padding: 8px 7px;
+    }
     .result-board__league-result {
         text-align: center;
         margin-top: 16px;
@@ -79,31 +65,23 @@ $rank-4: #9CE0AB;
 }
 
 .table-description {
+    color: $board-league-font;
     border-bottom: 8px solid $dropdown-icon;
     text-align: center;
 }
 
-.date-time {
-    font-size: 13px;
-}
-
 .league-table {
     margin-top: 0 !important;
-    font-size: 14px;
-
+    font-size: 0.9rem;
     &--box {
-        margin-bottom: 0;
-        &__header {
-            font-size: 13px;
-            padding: 0 !important;
-            border-bottom: 3px solid gray;
+        width: 100%;
+    }
+    &__header {
+        font-size: 0.8rem;
+        th {
+            padding-left: 9px;
         }
     }
-
-    thead {
-        padding: 0;
-    }
-
     tbody {
         tr {
             &:hover {
@@ -115,10 +93,10 @@ $rank-4: #9CE0AB;
             border-bottom: 1px solid $base-ranking-border;
         }
     }
-
     &__team-names {
         width: 50%;
         text-align: left;
+        font-size: 0.9rem;
         a {
             color: black;
         }

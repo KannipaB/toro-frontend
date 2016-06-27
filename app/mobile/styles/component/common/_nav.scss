@@ -2,6 +2,9 @@ $balltoro-gray: #333;
 $toggler: $balltoro-gray;
 $separator-list: $balltoro-gray;
 $collapse: $balltoro-gray;
+$collapse-border: black;
+$collapse-font: white;
+$hover-bg:black;
 $balltoro-red: #FA1E64;
 $nav-list: $balltoro-red;
 $nav-background: #222;
@@ -22,8 +25,8 @@ $nav-background: #222;
         border-radius: 5px;
         background-color: $toggler;
         padding: 3px 7px;
-        margin-top: 7px;
-        margin-right: 10px;
+        margin: 7px 10px;
+        ]
     }
 }
 
@@ -33,25 +36,22 @@ $nav-background: #222;
         color: $nav-list;
         display: block;
         line-height: 45px;
-        padding-left: 15px;
         &:hover, &:focus {
             color: $nav-list;
         }
     }
     &__collapse {
-        color: white;
+        color: $collapse-font;
         background-color: $collapse;
         display: block;
-        border-bottom: 1px solid black;
-        padding: 0.7em;
+        border-bottom: 1px solid $collapse-border;
         &:hover, &:focus {
-            color: white;
             text-decoration: none;
-            background-color: black;
+            background-color: $hover-bg;
         }
         &--icon {
-            color: white;
-            padding-left: 10px;
+            color: white!important;
+            padding-left: 0px!important;
             padding-right: 10px;
         }
     }
