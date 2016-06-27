@@ -2,31 +2,30 @@ $balltoro-gray: #333;
 $toggler: $balltoro-gray;
 $separator-list: $balltoro-gray;
 $collapse: $balltoro-gray;
-$collapse-border: black;
 $collapse-font: white;
-$hover-bg:black;
+$collapse-bg: black;
+$collapse-border: black;
 $balltoro-red: #FA1E64;
 $nav-list: $balltoro-red;
 $nav-background: #222;
 
 .nav-bar {
     background: #222;
-    &__dropdown {
-        &--position {
-            display: inline;
-            padding-left: 0;
-        }
+    &--position {
+        display: inline;
+        width: 100%;
+        padding-left: 0;
     }
     &__logo {
-        height: 50px;
+        height: 45px;
+        padding-left: 15px;
     }
     &__toggler {
         font-size: 1.8rem;
         border-radius: 5px;
         background-color: $toggler;
         padding: 3px 7px;
-        margin: 7px 10px;
-        ]
+        margin: 5px 10px;
     }
 }
 
@@ -36,22 +35,27 @@ $nav-background: #222;
         color: $nav-list;
         display: block;
         line-height: 45px;
+        padding-left: 15px;
         &:hover, &:focus {
             color: $nav-list;
         }
+    }
+    &--collapse-toggler {
+        float: right;
+        padding: 10px;
+        color: $collapse-font;
     }
     &__collapse {
         color: $collapse-font;
         background-color: $collapse;
         display: block;
         border-bottom: 1px solid $collapse-border;
+        padding: 0.7em;
         &:hover, &:focus {
             text-decoration: none;
-            background-color: $hover-bg;
+            background-color: $collapse-bg;
         }
         &--icon {
-            color: white!important;
-            padding-left: 0px!important;
             padding-right: 10px;
         }
     }
