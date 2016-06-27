@@ -12,7 +12,6 @@ $nav-background: #222;
 .nav-bar {
     background: #222;
     &--position {
-        display: inline!important;
         padding-left: 0;
     }
     &__logo {
@@ -24,14 +23,14 @@ $nav-background: #222;
         border-radius: 5px;
         background-color: $toggler;
         padding: 3px 7px;
-        margin: 5px 10px;
+        margin: 4px 10px;
     }
 }
 
 .nav-list {
+    color: $nav-list;
     &__menu {
         border-top: 1px solid $separator-list;
-        color: $nav-list;
         display: block;
         line-height: 45px;
         padding-left: 15px;
@@ -41,7 +40,8 @@ $nav-background: #222;
     }
     &--collapse-toggler {
         float: right;
-        padding: 10px;
+        padding: 14px;
+        margin-right: 10px;
         color: $collapse-font;
     }
     &__collapse {
