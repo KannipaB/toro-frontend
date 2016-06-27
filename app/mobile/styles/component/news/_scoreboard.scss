@@ -15,7 +15,6 @@ $rank-4: #9CE0AB;
 .result-board {
     margin-top: 7px;
     background: $base-widget-bg;
-    font-size: 1rem;
     a {
         &:hover {
             text-decoration: none;
@@ -28,14 +27,10 @@ $rank-4: #9CE0AB;
         padding: 2px 10px;
         margin: 0;
         font-size: 1.1rem;
-        a {
-            padding-right: 10px;
-        }
         &.collapsed {
             &:after {
                 content: "+";
                 float: right;
-                //font-size: 1.3rem;
                 line-height: 20px;
             }
         }
@@ -46,23 +41,22 @@ $rank-4: #9CE0AB;
             line-height: 20px;
         }
     }
-    &__league-dropdown--icon {
-        background: $dropdown-icon;
-        color: white;
-        font-size: 1.2rem;
-        padding: 7px;
-        padding-bottom: 10px;
-    }
     &__league-dropdown {
         background: $base-leagueHeader-bg;
         padding: 6px;
         display: block;
         color: $base-league-font;
-
+        font-size: 0.9rem;
         &--list {
             width: 100%;
             border: none;
         }
+    }
+    &__league-dropdown--icon {
+        background: $dropdown-icon;
+        color: white;
+        font-size: 1.1rem;
+        padding: 8px 7px;
     }
     .result-board__league-result {
         text-align: center;
@@ -71,28 +65,22 @@ $rank-4: #9CE0AB;
 }
 
 .table-description {
+    color: $board-league-font;
     border-bottom: 8px solid $dropdown-icon;
     text-align: center;
 }
 
-.date-time {
-    font-size: 1rem;
-}
-
 .league-table {
     margin-top: 0 !important;
-    font-size: 1rem;
+    font-size: 0.9rem;
     &--box {
-        margin-bottom: 0;
         width: 100%;
-        &__header {
-            font-size: 1rem;
-            padding: 0 !important;
-        }
     }
-    thead {
-        padding: 0;
+    &__header {
         font-size: 0.8rem;
+        th {
+            padding-left: 9px;
+        }
     }
     tbody {
         tr {
