@@ -1,0 +1,25 @@
+$stat-headline-bg: #f1f1f1;
+$default-border-bottom-color: #CCCCCC;
+
+.stat {
+    font-weight: 800;
+    &__headline {
+        background: $stat-headline-bg;
+        padding: 8px;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    &__team {
+        margin: 1rem 0;
+        font-size: .9rem;
+        &--name {
+            text-align: right;
+        }
+        &--player {
+            border-bottom: $default-border-bottom-color 1px solid;
+        }
+        &--sub-player {
+            border-bottom: $default-border-bottom-color 1px solid;
+        }
+    }
+}

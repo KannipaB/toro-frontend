@@ -12,12 +12,12 @@ $latest-details-color: rgba(0, 0, 0, .68);
             margin: 0;
         }
         a {
-            font-size: 2em;
+            font-size: 2rem;
         }
     }
     &__content {
         display: table;
-        padding: 1em 0;
+        padding: 1rem 0;
         border-bottom: $latest-separator-color 1px solid;
         &--image {
             img {
@@ -25,6 +25,7 @@ $latest-details-color: rgba(0, 0, 0, .68);
             }
         }
         &--date {
+            font-size: .9rem;
             color: $latest-date-color;
             &:before {
                 font-family: FontAwesome;

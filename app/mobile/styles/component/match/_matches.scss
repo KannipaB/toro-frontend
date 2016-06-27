@@ -1,0 +1,35 @@
+$date-selector-color: #F0F0F0;
+$league-toggle-color: $date-selector-color;
+$league-toggle-bottom: #CECBCB;
+
+.date-selector {
+    background: $date-selector-color;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    &__list {
+        width: 100% !important;
+        margin-top: 1em;
+    }
+}
+
+.league-toggle {
+    background: $league-toggle-color;
+    border-bottom: $league-toggle-bottom 1px solid;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    &.collapsed:after {
+        content: " + ";
+        float: right;
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+    &:after {
+        content: " − ";
+        float: right;
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+}

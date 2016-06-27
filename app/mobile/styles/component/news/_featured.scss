@@ -25,9 +25,9 @@ a {
     }
     &__date {
         color: $featured-date-color;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         padding: 5px;
-        &:before{
+        &:before {
             font-family: FontAwesome;
             content: " \f017 ";
         }
@@ -35,7 +35,7 @@ a {
     &__headline {
         padding: 0 5px;
     }
-    &__separator{
+    &__separator {
         border-bottom: $separator-color 1px solid;
     }
 }

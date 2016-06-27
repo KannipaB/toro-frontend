@@ -1,0 +1,12 @@
+$default-border-bottom-color: #CCCCCC;
+
+.result {
+    &__header {
+        margin-top: 2rem;
+        border-bottom: $default-border-bottom-color 1px solid;
+    }
+    &__show {
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
