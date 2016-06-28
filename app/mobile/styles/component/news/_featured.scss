@@ -1,18 +1,8 @@
 $default-button-color: #FFFFFF;
-$default-link-color: #FA1E64;
 $featured-date-color: rgba(0, 0, 0, .4);
 $featured-bg-color: #f1f1f1;
 $featured-top-border-color: #FFC025;
 $separator-color: $featured-bg-color;
-
-a {
-    color: $default-link-color;
-    text-decoration: none;
-    &:hover, &:focus, &:active {
-        color: $default-link-color;
-        text-decoration: underline;
-    }
-}
 
 .featured-content {
     background-color: $featured-bg-color;
@@ -27,10 +17,6 @@ a {
         color: $featured-date-color;
         font-size: 0.9rem;
         padding: 5px;
-        &:before {
-            font-family: FontAwesome;
-            content: " \f017 ";
-        }
     }
     &__headline {
         padding: 0 5px;

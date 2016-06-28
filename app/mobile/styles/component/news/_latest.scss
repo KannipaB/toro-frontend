@@ -1,7 +1,6 @@
 $latest-date-color: rgba(0, 0, 0, .4);
 $latest-separator-color: #f1f1f1;
 $latest-header-color: #FFC025;
-$latest-details-color: rgba(0, 0, 0, .68);
 
 .news {
     &__header {
@@ -27,15 +26,6 @@ $latest-details-color: rgba(0, 0, 0, .68);
         &--date {
             font-size: .9rem;
             color: $latest-date-color;
-            &:before {
-                font-family: FontAwesome;
-                content: " \f017 ";
-            }
-        }
-        &--headline {
-        }
-        &--sub-headline {
-            color: $latest-details-color;
         }
     }
 }
