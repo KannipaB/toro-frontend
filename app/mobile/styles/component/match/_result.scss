@@ -2,9 +2,9 @@ $match-result-color: #FFFFFF;
 $match-live-bg: #f1f1f1;
 $match-live-score-color: #216CB6;
 $match-live-ft-color: $match-live-score-color;
-$match-status-d:#F5D620;
-$match-status-l:#D62C2C;
-$match-status-w:#216CB6;
+$match-status-d: #F5D620;
+$match-status-l: #D62C2C;
+$match-status-w: #216CB6;
 
 .match-live {
     padding: 2rem 0;
@@ -27,7 +27,7 @@ $match-status-w:#216CB6;
         }
         &--result {
             width: 10%;
-            >.result-ft{
+            > .result-ft {
                 padding: 5px;
                 color: $match-result-color;
                 border-radius: 3px;
@@ -61,4 +61,3 @@ $match-status-w:#216CB6;
         }
     }
 }
-
