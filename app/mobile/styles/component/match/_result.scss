@@ -1,12 +1,64 @@
-$default-border-bottom-color: #CCCCCC;
+$match-result-color: #FFFFFF;
+$match-live-bg: #f1f1f1;
+$match-live-score-color: #216CB6;
+$match-live-ft-color: $match-live-score-color;
+$match-status-d:#F5D620;
+$match-status-l:#D62C2C;
+$match-status-w:#216CB6;
 
-.result {
-    &__header {
-        margin-top: 2rem;
-        border-bottom: $default-border-bottom-color 1px solid;
-    }
-    &__show {
-        margin: 1rem 0;
+.match-live {
+    padding: 2rem 0;
+    background: $match-live-bg;
+    &__table {
+        width: 100%;
+        font-size: .8rem;
         text-align: center;
+        &--logo {
+            width: 20%;
+        }
+        &--name {
+            width: 15%;
+        }
+        &--score {
+            width: 10%;
+            font-size: 1rem;
+            font-weight: 800;
+            color: $match-live-score-color;
+        }
+        &--result {
+            width: 10%;
+            >.result-ft{
+                padding: 5px;
+                color: $match-result-color;
+                border-radius: 3px;
+                background-color: $match-live-ft-color;
+            }
+        }
+    }
+    &__status {
+        font-size: .5rem;
+        color: $match-result-color;
+        font-weight: 600;
+        ul {
+            list-style: none;
+            li {
+                text-align: center;
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                padding: 1px;
+                border-radius: 50%;
+            }
+        }
+        &--D {
+            background-color: $match-status-d;
+        }
+        &--L {
+            background-color: $match-status-l;
+        }
+        &--W {
+            background-color: $match-status-w;
+        }
     }
 }
+

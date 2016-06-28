@@ -3,19 +3,15 @@ $score-color: #0672BC;
 $score-result-ft-text: #FFFFFF;
 $score-result-ft-bg: #CCCCCC;
 
-.match-score {
+.match-list {
+    font-size: .8rem;
     &__table {
+        display: table;
         padding: 8px;
         width: 100%;
         border-bottom: $score-table-bottom 1px solid;
         font-weight: 700;
         vertical-align: middle;
-        a {
-            display: block;
-            &:hover {
-                text-decoration: none;
-            }
-        }
         span {
             display: inline-table;
             vertical-align: middle;
@@ -27,6 +23,9 @@ $score-result-ft-bg: #CCCCCC;
     &__logo {
         width: 10%;
         text-align: center;
+        img {
+            max-width: 100%;
+        }
     }
     &__home {
         text-align: right;
@@ -44,7 +43,7 @@ $score-result-ft-bg: #CCCCCC;
         width: 10%;
         &--ft {
             background-color: $score-result-ft-bg;
-            border-radius: 20px;
+            border-radius: 5px;
             width: 80%;
             color: $score-result-ft-text;
         }
