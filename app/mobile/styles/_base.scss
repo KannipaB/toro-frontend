@@ -1,3 +1,9 @@
-p {
-    margin: 0;
-}
+$default-link-color: #FA1E64;
+
+a {
+    color: $default-link-color;
+    text-decoration: none;
+    &:hover, &:focus, &:active {
+        color: $default-link-color;
+        text-decoration: underline;
+    }
