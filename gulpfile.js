@@ -110,7 +110,6 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
 
   gulp.watch([
     'app/mobile/template/*.html',
-    'app/mobile/template/**/*.html',
     'app/images/mobile/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
