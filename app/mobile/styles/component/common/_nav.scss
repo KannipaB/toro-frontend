@@ -10,7 +10,7 @@ $nav-list: $balltoro-red;
 $nav-background: #222;
 
 .nav-bar {
-    background: #222;
+    background: $nav-background;
     &--position {
         padding-left: 0;
     }
