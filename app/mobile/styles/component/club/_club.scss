@@ -1,0 +1,37 @@
+$club-header-border-color: #FFC025;
+$club-tabs-color: #203647;
+
+.club {
+    &__header {
+        border-bottom: $club-header-border-color 8px solid;
+    }
+    &__info {
+        &--row {
+            width: 100%;
+            span {
+                &:first-child {
+                    display: inline-block;
+                    font-weight: 700;
+                    width: 40%;
+                }
+                &:last-child {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    &__tabs{
+        &--header{
+            margin-top: 1rem;
+            padding: .5rem;
+            background: $club-tabs-color;
+            li{
+                display: inline;
+                padding: 0 1rem;
+                .active{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
