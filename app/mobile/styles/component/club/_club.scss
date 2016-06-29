@@ -1,7 +1,23 @@
 $club-header-border-color: #FFC025;
 $club-tabs-color: #203647;
+$club-tabs-active: #FFFFFF;
+
+$club-player-odd-bg: #FFFFFF;
+$club-player-even-bg: #f1f1f1;
+
+$club-player-info-odd: #203647;
+$club-player-info-even: #68686A;
+
+$club-news-date-color: rgba(0, 0, 0, .4);
+$club-news-content-border: #f1f1f1;
+
+$club-other-logo-bg: #f1f1f1;
+
+$club-table-header-color: #203647;
+$club-table-border-color: $club-table-header-color;
 
 .club {
+    font-size: .8rem;
     &__header {
         border-bottom: $club-header-border-color 8px solid;
     }
@@ -20,18 +36,132 @@ $club-tabs-color: #203647;
             }
         }
     }
-    &__tabs{
-        &--header{
+    &__tabs {
+        &--header {
             margin-top: 1rem;
             padding: .5rem;
             background: $club-tabs-color;
-            li{
+            li {
                 display: inline;
                 padding: 0 1rem;
-                .active{
-                    color: #FFFFFF;
+                .active {
+                    color: $club-tabs-active;
                 }
             }
+        }
+    }
+}
+
+.club-players {
+    list-style: none;
+    padding: 0;
+    li {
+        &:nth-child(odd) {
+            background-color: $club-player-odd-bg;
+        }
+        &:nth-child(even) {
+            background-color: $club-player-even-bg;
+        }
+    }
+    &__meta {
+        padding: 1rem 0;
+        text-align: center;
+        &--image {
+            padding-bottom: .5rem;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        &--name {
+            font-weight: 700;
+        }
+        &--pos {
+            p {
+                display: inline;
+                margin: 5px;
+                font-weight: 700;
+            }
+        }
+        &--info {
+            span {
+                &:nth-child(odd) {
+                    color: $club-player-info-odd;
+                }
+                &:nth-child(even) {
+                    color: $club-player-info-even;
+                    padding: 0 5px;
+                }
+            }
+        }
+        &--more {
+            padding: .5rem 0;
+            font-size: .8rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.club-table {
+    width: 100%;
+    thead {
+        tr {
+            color: $club-table-header-color;
+            th {
+                padding: 5px;
+                text-align: center;
+                border-bottom: $club-table-border-color 3px solid;
+            }
+        }
+    }
+    tbody {
+        tr {
+            text-align: center;
+            td {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.club-news {
+    &__header {
+        border-bottom: $club-header-border-color 8px solid;
+        p, h5 {
+            margin: 0;
+        }
+    }
+    &__content {
+        border-bottom: $club-news-content-border 1px dashed;
+        padding: 1rem 0;
+        &--image {
+            img {
+                max-width: 100%;
+            }
+        }
+        &--date {
+            color: $club-news-date-color;
+        }
+    }
+}
+
+.club-other {
+    &__header {
+        border-bottom: $club-header-border-color 8px solid;
+        p, h5 {
+            margin: 0;
+        }
+    }
+    &__list {
+        &--name {
+            p {
+                padding-top: 1rem;
+                font-weight: 600;
+            }
+        }
+        &--logo {
+            text-align: center;
+            background-color: $club-other-logo-bg;
         }
     }
 }
