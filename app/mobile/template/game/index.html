@@ -9,41 +9,54 @@
         <div class="container">
             <div class="col-xs-12">
                 <div class="row vote">
-                    <table class="vote__table">
-                        <tbody>
-                            <tr>
-                                <td><button class="vote__button" value="home">VOTE</button></td>
-                                <td><button class="vote__button" value="draw">VOTE</button></td>
-                                <td><button class="vote__button" value="away">VOTE</button></td>
-                            </tr>
-                            <tr>
-                                <td>HOME</td>
-                                <td>DRAW</td>
-                                <td>AWAY</td>
-                            </tr>
-                            <tr class="vote__result">
-                                <td>
-                                    <ul>
-                                        <li class="vote__result--win">W</li>
-                                        <li class="vote__result--draw">D</li>
-                                        <li class="vote__result--lose">L</li>
-                                        <li class="vote__result--win">W</li>
-                                        <li class="vote__result--win">W</li>
-                                    </ul>
-                                </td>
-                                <td>H2H</td>
-                                <td>
-                                    <ul>
-                                        <li class="vote__result--win">W</li>
-                                        <li class="vote__result--draw">D</li>
-                                        <li class="vote__result--lose">L</li>
-                                        <li class="vote__result--win">W</li>
-                                        <li class="vote__result--win">W</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="vote__table">
+                        <div class="row vote__group">
+                            <ul>
+                                <li class="nav-item col-xs-4">
+                                    <button class="vote__group--button" value="home" data-toggle="tab" href="#home" role="tab">VOTE</button>
+                                </li>
+                                <li class="nav-item col-xs-4">
+                                    <button class="vote__group--button" value="draw" data-toggle="tab" href="#profile" role="tab">VOTE</button>
+                                </li>
+                                <li class="nav-item col-xs-4">
+                                    <button class="vote__group--button" value="away" data-toggle="tab" href="#messages" role="tab">VOTE</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row vote__title">
+                            <div class="col-xs-4">HOME</div>
+                            <div class="col-xs-4">DRAW</div>
+                            <div class="col-xs-4">AWAY</div>
+                        </div>
+                        <div class="row vote__result">
+                            <div class="col-xs-4">
+                                <ul>
+                                    <li class="vote__result--win">W</li>
+                                    <li class="vote__result--draw">D</li>
+                                    <li class="vote__result--lose">L</li>
+                                    <li class="vote__result--win">W</li>
+                                    <li class="vote__result--win">W</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4">H2H</div>
+                            <div class="col-xs-4">
+                                <ul>
+                                    <li class="vote__result--win">W</li>
+                                    <li class="vote__result--draw">D</li>
+                                    <li class="vote__result--lose">L</li>
+                                    <li class="vote__result--win">W</li>
+                                    <li class="vote__result--win">W</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane" id="home" role="tabpanel">HOME</div>
+                        <div class="tab-pane" id="profile" role="tabpanel">PROFILE</div>
+                        <div class="tab-pane" id="messages" role="tabpanel">MESSAGE</div>
+                    </div>
+
                 </div>
             </div>
         </div>
