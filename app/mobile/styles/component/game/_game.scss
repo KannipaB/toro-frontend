@@ -1,0 +1,67 @@
+$vote-text-color: #216CB6;
+$vote-button-color: $vote-text-color;
+$vote-button-text-active: #FFFFFF;
+
+$result-text: #FFFFFF;
+$result-win: #216CB6;
+$result-draw: #F5D620;
+$result-lose: #D62C2C;
+
+.vote {
+    color: $vote-text-color;
+    text-align: center;
+    font-weight: 700;
+    &__table {
+        width: 100%;
+        tr {
+            td {
+                padding: .4rem 0;
+            }
+        }
+    }
+    &__button {
+        color: $vote-text-color;
+        background-color: $vote-button-text-active;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 75px;
+        width: 90px;
+        height: 90px;
+        border: $vote-button-color 3px solid;
+        border-radius: 50%;
+        &:hover {
+            color: $vote-button-text-active;
+            background: $vote-button-color;
+        }
+        .active {
+            color: $vote-button-text-active;
+            background: $vote-button-color;
+        }
+    }
+    &__result {
+        font-size: .8rem;
+        &--win {
+            background-color: $result-win;
+        }
+        &--draw {
+            background-color: $result-draw;
+        }
+        &--lose {
+            background-color: $result-lose;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                color: $result-text;
+                font-size: .5rem;
+                display: inline-block;
+                border-radius: 50%;
+            }
+        }
+    }
+}
