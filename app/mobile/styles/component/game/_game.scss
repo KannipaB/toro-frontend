@@ -1,6 +1,9 @@
 $vote-text-color: #216CB6;
 $vote-button-color: $vote-text-color;
 $vote-button-text-active: #FFFFFF;
+$vote-button-bg: #FFFFFF;
+$vote-footer-bg: #FFFFFF;
+$vote-footer-text: #333333;
 
 $predict-border-color: $vote-text-color;
 $predict-bg-color: #162A38;
@@ -24,7 +27,6 @@ $predict-score-bg: #549AF7;
         margin: 2rem 0;
     }
     &__group {
-        padding-bottom: rem;
         ul {
             margin: 0;
             padding: 0;
@@ -77,6 +79,26 @@ $predict-score-bg: #549AF7;
                 display: inline-block;
                 border-radius: 50%;
             }
+        }
+    }
+    &__footer {
+        color: $vote-footer-text;
+        font-weight: normal;
+        text-align: left;
+        background: $vote-footer-bg;
+    }
+    &__send {
+        width: 100%;
+        padding: 10px;
+        margin: 1rem 0;
+        border-radius: 0px;
+        color: $predict-btn;
+        font-weight: 700;
+        border: $predict-btn 3px solid;
+        background: $vote-button-bg;
+        &:hover {
+            color: $vote-button-text-active;
+            background: $predict-btn;
         }
     }
 }
