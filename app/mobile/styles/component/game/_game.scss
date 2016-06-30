@@ -2,6 +2,10 @@ $vote-text-color: #216CB6;
 $vote-button-color: $vote-text-color;
 $vote-button-text-active: #FFFFFF;
 
+$predict-border-color: $vote-text-color;
+$predict-bg-color: #162A38;
+$predict-text-color: #FFFFFF;
+
 $result-text: #FFFFFF;
 $result-win: #216CB6;
 $result-draw: #F5D620;
@@ -69,5 +73,36 @@ $result-lose: #D62C2C;
                 border-radius: 50%;
             }
         }
+    }
+}
+
+.predict-score {
+    width: 100%;
+    border-top: $predict-border-color 8px solid;
+    background: $predict-bg-color;
+    color: $predict-text-color;
+    &__selector {
+        float: left;
+        display: inline-block;
+        &--number {
+            font-size: 5rem;
+            background: #549AF7;
+        }
+        &--increase {
+            background: #2E7CBC;
+        }
+        &--decrease {
+            background: #2E7CBC;
+            &.disabled {
+                color: #5d5d5d;
+                background: #003454;
+            }
+        }
+    }
+    &__label {
+        padding: 105px 0;
+        font-size: .8rem;
+        float: left;
+        display: inline-block;
     }
 }

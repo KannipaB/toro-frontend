@@ -13,13 +13,13 @@
                         <div class="row vote__group">
                             <ul>
                                 <li class="nav-item col-xs-4">
-                                    <button class="vote__group--button" value="home" data-toggle="tab" href="#home" role="tab">VOTE</button>
+                                    <button class="vote__group--button" value="home" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
                                 </li>
                                 <li class="nav-item col-xs-4">
-                                    <button class="vote__group--button" value="draw" data-toggle="tab" href="#profile" role="tab">VOTE</button>
+                                    <button class="vote__group--button" value="draw" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
                                 </li>
                                 <li class="nav-item col-xs-4">
-                                    <button class="vote__group--button" value="away" data-toggle="tab" href="#messages" role="tab">VOTE</button>
+                                    <button class="vote__group--button" value="away" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
                                 </li>
                             </ul>
                         </div>
@@ -50,11 +50,31 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="tab-content">
-                        <div class="tab-pane" id="home" role="tabpanel">HOME</div>
-                        <div class="tab-pane" id="profile" role="tabpanel">PROFILE</div>
-                        <div class="tab-pane" id="messages" role="tabpanel">MESSAGE</div>
+                        <div class="tab-pane predict-score" id="predict-board">
+                            <div class="row">
+                                <div class="col-xs-5 predict-score__selector">
+                                    <div class="predict-score__selector--increase" onclick="increaseHome()" id="home-increase"><i class="fa fa-4x fa-angle-up" aria-hidden="true"></i></div>
+                                    <div class="predict-score__selector--number" id="home-score"></div>
+                                    <div class="predict-score__selector--decrease disabled" onclick="decreaseHome()" id="home-decrease"><i class="fa fa-4x fa-angle-down" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="col-xs-2 predict-score__label">Prediction Score</div>
+                                <div class="col-xs-5 predict-score__selector">
+                                    <div class="predict-score__selector--increase" onclick="increaseAway()" id="away-increase"><i class="fa fa-4x fa-angle-up" aria-hidden="true"></i></div>
+                                    <div class="predict-score__selector--number" id="away-score"></div>
+                                    <div class="predict-score__selector--decrease disabled" onclick="decreaseAway()" id="away-decrease"><i class="fa fa-4x fa-angle-down" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                                <!--<div class="predict-score__selector">-->
+
+                                <!--</div>-->
+                                <!--<div class="predict-score__label">Prediction Score</div>-->
+                                <!--<div class="predict-score__selector">-->
+                                    <!--<div><span class="predict-score__selector&#45;&#45;increase"><i class="fa fa-3x fa-angle-up" aria-hidden="true"></i></span></div>-->
+                                    <!--<div><span class="predict-score__selector&#45;&#45;number">0</span></div>-->
+                                    <!--<div><span class="predict-score__selector&#45;&#45;decrease"><i class="fa fa-3x fa-angle-down" aria-hidden="true"></i></span></div>-->
+                                <!--</div>-->
+                        </div>
                     </div>
 
                 </div>
@@ -83,6 +103,7 @@
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/tether/dist/js/tether.min.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../scripts/game.js"></script>
         <!--end_script-->
     </body>
 </html>
