@@ -24,7 +24,7 @@ $predict-score-bg: #549AF7;
         margin: 2rem 0;
     }
     &__group {
-        padding-bottom: 1rem;
+        padding-bottom: rem;
         ul {
             margin: 0;
             padding: 0;
@@ -38,9 +38,9 @@ $predict-score-bg: #549AF7;
             background-color: $vote-button-text-active;
             font-size: 1.2rem;
             font-weight: 700;
-            line-height: 75px;
-            width: 90px;
-            height: 90px;
+            line-height: 80px;
+            width: 95px;
+            height: 95px;
             border: $vote-button-color 3px solid;
             border-radius: 50%;
             &:hover {
