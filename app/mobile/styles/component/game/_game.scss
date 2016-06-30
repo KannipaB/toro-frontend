@@ -11,6 +11,11 @@ $result-win: #216CB6;
 $result-draw: #F5D620;
 $result-lose: #D62C2C;
 
+$predict-btn: #2E7CBC;
+$predict-btn-disable: #003454;
+$predict-btn-disable-text: #5d5d5d;
+$predict-score-bg: #549AF7;
+
 .vote {
     color: $vote-text-color;
     text-align: center;
@@ -86,16 +91,16 @@ $result-lose: #D62C2C;
         display: inline-block;
         &--number {
             font-size: 5rem;
-            background: #549AF7;
+            background: $predict-score-bg;
         }
         &--increase {
-            background: #2E7CBC;
+            background: $predict-btn;
         }
         &--decrease {
-            background: #2E7CBC;
+            background: $predict-btn;
             &.disabled {
-                color: #5d5d5d;
-                background: #003454;
+                color: $predict-btn-disable-text;
+                background: $predict-btn-disable;
             }
         }
     }
