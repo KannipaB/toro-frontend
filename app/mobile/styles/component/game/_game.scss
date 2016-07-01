@@ -19,6 +19,13 @@ $predict-btn-disable: #003454;
 $predict-btn-disable-text: #5d5d5d;
 $predict-score-bg: #549AF7;
 
+$recent-match-border: #eceeef;
+$recent-text-highlight: #216CB6;
+$recent-header-bg: $recent-text-highlight;
+
+$ranking-up: #216CB6;
+$ranking-down: #D62C2C;
+
 .vote {
     color: $vote-text-color;
     text-align: center;
@@ -131,5 +138,83 @@ $predict-score-bg: #549AF7;
         font-size: .8rem;
         float: left;
         display: inline-block;
+    }
+}
+
+.recent-match {
+    font-size: .7rem;
+    margin: 1rem 0;
+    &__table {
+        border: $recent-match-border 1px solid;
+        text-align: center;
+    }
+    &__header {
+        text-align: center;
+        color: $result-text;
+        width: 100px;
+        padding: .5rem;
+        background: $recent-header-bg;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &__col {
+        width: 100%;
+        &--team {
+            display: inline-block;
+            width: 40%;
+            padding: 0 5px;
+            &:first-child {
+                text-align: right;
+            }
+            &:last-child {
+                text-align: left;
+            }
+        }
+        &--score {
+            width: 20%;
+        }
+    }
+    &__highlight {
+        color: $recent-text-highlight;
+    }
+    &__label {
+        &--win {
+            color: $result-win;
+        }
+        &--lose {
+            color: $result-lose;
+        }
+        &--draw {
+            color: $result-draw;
+        }
+    }
+}
+
+.ranking {
+    font-size: .7rem;
+    margin: 1rem 0;
+    &__header {
+        text-align: center;
+        color: $result-text;
+        width: 100px;
+        padding: .5rem;
+        background: $recent-header-bg;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &__table {
+        border: $recent-match-border 1px solid;
+        text-align: center;
+    }
+    &__highlight {
+        color: $recent-text-highlight;
+    }
+    &__update {
+        &--up {
+            color: $ranking-up;
+        }
+        &--down {
+            color: $ranking-down;
+        }
     }
 }

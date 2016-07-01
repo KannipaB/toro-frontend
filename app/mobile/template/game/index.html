@@ -7,71 +7,329 @@
     </head>
     <body>
         <div class="container">
-            <div class="col-xs-12">
-                <div class="row vote">
-                    <div class="vote__table">
-                        <div class="row vote__group">
-                            <ul>
-                                <li class="nav-item col-xs-4">
-                                    <button class="vote__group--button" value="home" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
-                                </li>
-                                <li class="nav-item col-xs-4">
-                                    <button class="vote__group--button" value="draw" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
-                                </li>
-                                <li class="nav-item col-xs-4">
-                                    <button class="vote__group--button" value="away" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row vote__title">
-                            <div class="col-xs-4">HOME</div>
-                            <div class="col-xs-4">DRAW</div>
-                            <div class="col-xs-4">AWAY</div>
-                        </div>
-                        <div class="row vote__result">
-                            <div class="col-xs-4">
+            <div class="row vote m-y-2">
+                    <div class="col-xs-12">
+                        <div class="vote__table">
+                            <div class="row vote__group">
                                 <ul>
-                                    <li class="vote__result--win">W</li>
-                                    <li class="vote__result--draw">D</li>
-                                    <li class="vote__result--lose">L</li>
-                                    <li class="vote__result--win">W</li>
-                                    <li class="vote__result--win">W</li>
+                                    <li class="nav-item col-xs-4">
+                                        <button class="vote__group--button" value="home" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
+                                    </li>
+                                    <li class="nav-item col-xs-4">
+                                        <button class="vote__group--button" value="draw" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
+                                    </li>
+                                    <li class="nav-item col-xs-4">
+                                        <button class="vote__group--button" value="away" data-toggle="tab" href="#predict-board" role="tab">VOTE</button>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="col-xs-4">H2H</div>
-                            <div class="col-xs-4">
-                                <ul>
-                                    <li class="vote__result--win">W</li>
-                                    <li class="vote__result--draw">D</li>
-                                    <li class="vote__result--lose">L</li>
-                                    <li class="vote__result--win">W</li>
-                                    <li class="vote__result--win">W</li>
-                                </ul>
+                            <div class="row vote__title">
+                                <div class="col-xs-4">HOME</div>
+                                <div class="col-xs-4">DRAW</div>
+                                <div class="col-xs-4">AWAY</div>
+                            </div>
+                            <div class="row vote__result">
+                                <div class="col-xs-4">
+                                    <ul>
+                                        <li class="vote__result--win">W</li>
+                                        <li class="vote__result--draw">D</li>
+                                        <li class="vote__result--lose">L</li>
+                                        <li class="vote__result--win">W</li>
+                                        <li class="vote__result--win">W</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-4">H2H</div>
+                                <div class="col-xs-4">
+                                    <ul>
+                                        <li class="vote__result--win">W</li>
+                                        <li class="vote__result--draw">D</li>
+                                        <li class="vote__result--lose">L</li>
+                                        <li class="vote__result--win">W</li>
+                                        <li class="vote__result--win">W</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane predict-score" id="predict-board">
-                            <div class="row">
-                                <div class="col-xs-5 predict-score__selector">
-                                    <div class="predict-score__selector--increase" onclick="increaseHome()" id="home-increase"><i class="fa fa-4x fa-angle-up" aria-hidden="true"></i></div>
-                                    <div class="predict-score__selector--number" id="home-score"></div>
-                                    <div class="predict-score__selector--decrease disabled" onclick="decreaseHome()" id="home-decrease"><i class="fa fa-4x fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="tab-content">
+                            <div class="tab-pane predict-score" id="predict-board">
+                                <div class="row">
+                                    <div class="col-xs-5 predict-score__selector">
+                                        <div class="predict-score__selector--increase" onclick="increaseHome()" id="home-increase"><i class="fa fa-4x fa-angle-up" aria-hidden="true"></i></div>
+                                        <div class="predict-score__selector--number" id="home-score"></div>
+                                        <div class="predict-score__selector--decrease disabled" onclick="decreaseHome()" id="home-decrease"><i class="fa fa-4x fa-angle-down" aria-hidden="true"></i></div>
+                                    </div>
+                                    <div class="col-xs-2 predict-score__label">Prediction Score</div>
+                                    <div class="col-xs-5 predict-score__selector">
+                                        <div class="predict-score__selector--increase" onclick="increaseAway()" id="away-increase"><i class="fa fa-4x fa-angle-up" aria-hidden="true"></i></div>
+                                        <div class="predict-score__selector--number" id="away-score"></div>
+                                        <div class="predict-score__selector--decrease disabled" onclick="decreaseAway()" id="away-decrease"><i class="fa fa-4x fa-angle-down" aria-hidden="true"></i></div>
+                                    </div>
                                 </div>
-                                <div class="col-xs-2 predict-score__label">Prediction Score</div>
-                                <div class="col-xs-5 predict-score__selector">
-                                    <div class="predict-score__selector--increase" onclick="increaseAway()" id="away-increase"><i class="fa fa-4x fa-angle-up" aria-hidden="true"></i></div>
-                                    <div class="predict-score__selector--number" id="away-score"></div>
-                                    <div class="predict-score__selector--decrease disabled" onclick="decreaseAway()" id="away-decrease"><i class="fa fa-4x fa-angle-down" aria-hidden="true"></i></div>
+                                <div class="vote__footer">
+                                    <button class="btn vote__send">SEND PREDICTION</button>
+                                    <span>ร่วมสนุกเล่นเกมทาย 11 ผู้เล่นตัวจริง บลาๆๆๆ ไม่เชื่อลองดูสื สนุกนะเริ่มต้นด้วยตัวเอง </span>
                                 </div>
-                            </div>
-                            <div class="vote__footer">
-                                <button class="btn vote__send">SEND PREDICTION</button>
-                                <span>ร่วมสนุกเล่นเกมทาย 11 ผู้เล่นตัวจริง บลาๆๆๆ ไม่เชื่อลองดูสื สนุกนะเริ่มต้นด้วยตัวเอง </span>
                             </div>
                         </div>
                     </div>
                 </div>
+            <div class="row recent-match">
+                    <div class="recent-match__header">5 Match</div>
+                    <table class="table recent-match__table m-b-0">
+                        <thead>
+                            <tr>
+                                <th class="text-xs-center">Comp</th>
+                                <th class="text-xs-center">Date</th>
+                                <th class="text-xs-center">Match</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BPL</td>
+                                <td>10/07/15</td>
+                                <td>
+                                    <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                                    <span class="recent-match__col--team">Westborm</span>
+                                </td>
+                                <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>BPL</td>
+                                <td>10/07/15</td>
+                                <td>
+                                    <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                                    <span class="recent-match__col--team">Westborm</span>
+                                </td>
+                                <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>BPL</td>
+                                <td>10/07/15</td>
+                                <td>
+                                    <span class="recent-match__col--team">Westborm</span>
+                                    <span class="recent-match__col--score">
+                                        <span>1 - 2</span>
+                                    </span>
+                                    <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                </td>
+                                <td class="recent-match__label--lose"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>BPL</td>
+                                <td>10/07/15</td>
+                                <td>
+                                    <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>1 - 1</span>
+                                    </span>
+                                    <span class="recent-match__col--team">Westborm</span>
+                                </td>
+                                <td class="recent-match__label--draw"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>BPL</td>
+                                <td>10/07/15</td>
+                                <td>
+                                    <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                                    <span class="recent-match__col--team">Westborm</span>
+                                </td>
+                                <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div class="row recent-match">
+                    <div class="recent-match__header">5 Match</div>
+                    <table class="table recent-match__table m-b-0">
+                        <thead>
+                        <tr>
+                            <th class="text-xs-center">Comp</th>
+                            <th class="text-xs-center">Date</th>
+                            <th class="text-xs-center">Match</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>BPL</td>
+                            <td>10/07/15</td>
+                            <td>
+                                <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                                <span class="recent-match__col--team">Westborm</span>
+                            </td>
+                            <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>BPL</td>
+                            <td>10/07/15</td>
+                            <td>
+                                <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                                <span class="recent-match__col--team">Westborm</span>
+                            </td>
+                            <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>BPL</td>
+                            <td>10/07/15</td>
+                            <td>
+                                <span class="recent-match__col--team">Westborm</span>
+                                    <span class="recent-match__col--score">
+                                        <span>1 - 2</span>
+                                    </span>
+                                <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                            </td>
+                            <td class="recent-match__label--lose"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>BPL</td>
+                            <td>10/07/15</td>
+                            <td>
+                                <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>1 - 1</span>
+                                    </span>
+                                <span class="recent-match__col--team">Westborm</span>
+                            </td>
+                            <td class="recent-match__label--draw"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>BPL</td>
+                            <td>10/07/15</td>
+                            <td>
+                                <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                                <span class="recent-match__col--team">Westborm</span>
+                            </td>
+                            <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div class="row recent-match">
+                <div class="recent-match__header">H2H</div>
+                <table class="table recent-match__table m-b-0">
+                    <thead>
+                    <tr>
+                        <th class="text-xs-center">Comp</th>
+                        <th class="text-xs-center">Date</th>
+                        <th class="text-xs-center">Match</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>BPL</td>
+                        <td>10/07/15</td>
+                        <td>
+                            <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                            <span class="recent-match__col--team">Westborm</span>
+                        </td>
+                        <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>BPL</td>
+                        <td>10/07/15</td>
+                        <td>
+                            <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                            <span class="recent-match__col--team">Westborm</span>
+                        </td>
+                        <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>BPL</td>
+                        <td>10/07/15</td>
+                        <td>
+                            <span class="recent-match__col--team">Westborm</span>
+                                    <span class="recent-match__col--score">
+                                        <span>1 - 2</span>
+                                    </span>
+                            <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                        </td>
+                        <td class="recent-match__label--lose"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>BPL</td>
+                        <td>10/07/15</td>
+                        <td>
+                            <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>1 - 1</span>
+                                    </span>
+                            <span class="recent-match__col--team">Westborm</span>
+                        </td>
+                        <td class="recent-match__label--draw"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>BPL</td>
+                        <td>10/07/15</td>
+                        <td>
+                            <span class="recent-match__col--team recent-match__highlight">Chealsea</span>
+                                    <span class="recent-match__col--score">
+                                        <span>2 - 1</span>
+                                    </span>
+                            <span class="recent-match__col--team">Westborm</span>
+                        </td>
+                        <td class="recent-match__label--win"><i class="fa fa-circle" aria-hidden="true"></i></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row ranking">
+                <div class="ranking__header">Table</div>
+                <table class="table ranking__table m-b-0">
+                    <thead>
+                    <tr>
+                        <th class="text-xs-center">Pos</th>
+                        <th class="text-xs-center">Team</th>
+                        <th class="text-xs-center">P</th>
+                        <th class="text-xs-center">GD</th>
+                        <th class="text-xs-center">Pts</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Chelsea</td>
+                        <td class="ranking__highlight">10</td>
+                        <td class="ranking__highlight">10</td>
+                        <td class="ranking__highlight">29</td>
+                        <td class="ranking__update--up"><i class="fa fa-caret-up" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Arsenal</td>
+                        <td class="ranking__highlight">10</td>
+                        <td class="ranking__highlight">5</td>
+                        <td class="ranking__highlight">22</td>
+                        <td class="ranking__update--down"><i class="fa fa-caret-down" aria-hidden="true"></i></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!---------- FOOTER BELOW ---------->
