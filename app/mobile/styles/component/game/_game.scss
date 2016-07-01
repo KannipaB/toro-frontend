@@ -26,6 +26,10 @@ $recent-header-bg: $recent-text-highlight;
 $ranking-up: #216CB6;
 $ranking-down: #D62C2C;
 
+$live-score-border: $recent-match-border;
+$live-score-text: #216CB6;
+$live-time-bg: $live-score-text;
+
 .vote {
     color: $vote-text-color;
     text-align: center;
@@ -47,9 +51,9 @@ $ranking-down: #D62C2C;
             background-color: $vote-button-text-active;
             font-size: 1.2rem;
             font-weight: 700;
-            line-height: 80px;
-            width: 95px;
-            height: 95px;
+            line-height: 75px;
+            width: 80px;
+            height: 80px;
             border: $vote-button-color 3px solid;
             border-radius: 50%;
             &:hover {
@@ -93,6 +97,7 @@ $ranking-down: #D62C2C;
         font-weight: normal;
         text-align: left;
         background: $vote-footer-bg;
+        margin-bottom: 1rem;
     }
     &__send {
         width: 100%;
@@ -215,6 +220,38 @@ $ranking-down: #D62C2C;
         }
         &--down {
             color: $ranking-down;
+        }
+    }
+}
+
+.live-score {
+    border: $live-score-border 1px solid;
+    text-align: center;
+    &__table {
+        color: $live-score-text;
+        width: 100%;
+        &--logo {
+            width: 25%;
+        }
+        &--score {
+            font-size: 3rem;
+            width: 15%;
+        }
+        &--live {
+            width: 20%;
+            span {
+                display: block;
+            }
+        }
+        &--time {
+            font-size: .8rem;
+            border-radius: 25px;
+            color: $result-text;
+            background-color: $live-time-bg;
+        }
+        &--halftime {
+            font-size: .8rem;
+            font-weight: 700;
         }
     }
 }
